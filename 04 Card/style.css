@@ -1,0 +1,41 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  border: 2px solid grey;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.image {
+  display: flex;
+  margin: auto;
+}
+
+.title {
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}
+
+.content {
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+.items {
+  border-bottom: 1px solid black;
+  padding: 0 10px;
+}
+
+.links {
+  padding: 10px;
+}

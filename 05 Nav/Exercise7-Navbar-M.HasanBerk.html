@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      body {
+        background-color: gold;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(47, 47, 47);
+        color: #fff;
+        height: 50px;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      #title {
+        padding: 0 10px;
+        font-size: 28px;
+      }
+
+      #dropdown {
+        background-color: rgb(47, 47, 47);
+        color: gray;
+        border: 0;
+        font-size: inherit;
+        font-family: inherit;
+      }
+      .links {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .links a:nth-child(3) {
+        color: grey;
+      }
+
+      .disabled {
+        background-color: rgb(47, 47, 47);
+        border: 0;
+        color: rgb(76, 76, 76);
+        font-size: inherit;
+        font-family: inherit;
+      }
+
+      .search {
+        margin-right: 15px;
+      }
+      .search-input {
+        padding: 7.5px;
+        border-radius: 5px;
+      }
+      .search-button {
+        padding: 7.5px 18px;
+        background-color: rgb(47, 47, 47);
+        border: 2px solid rgb(0, 101, 0);
+        border-radius: 5px;
+        color: rgb(0, 101, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="links">
+        <h1 id="title">Navbar</h1>
+        <a href="#"><b>Home</b></a>
+        <a href="#">Link</a>
+        <select name="dropdown" id="dropdown">
+          <option value="dropdpwn" selected hidden disabled>Dropdown</option>
+          <option value="option1">o1</option>
+          <option value="option2">o2</option>
+          <option value="option3">o3</option>
+        </select>
+        <button disabled class="disabled">Disabled</button>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="search-button">Search</button>
+      </div>
+    </nav>
+  </body>
+</html>
